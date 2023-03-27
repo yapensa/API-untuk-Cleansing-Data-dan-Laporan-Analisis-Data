@@ -1,0 +1,46 @@
+swagger: "2.0"
+info:
+  title: "Contoh Swagger"
+  description: "Contoh API menggunakan Swagger"
+  version: "1.0"
+host: "localhost:8000"
+basePath: "/api/v1"
+schemes:
+  - "http"
+  - "https"
+parameters:
+  - name: input_data
+    in: formData
+    required: true
+    type: string
+paths:
+  /example:
+    get:
+      summary: "Contoh API"
+      description: "API untuk mengambil contoh data"
+      responses:
+        200:
+          description: "Hasil dari API"
+      tags:
+        - "Contoh"
+  /docs:
+    get:
+      summary: "Dokumentasi Swagger"
+      description: "API untuk mengakses dokumentasi Swagger"
+      responses:
+        200:
+          description: "Dokumentasi Swagger"
+      tags:
+        - "Dokumentasi"
+  /ui:
+    get:
+      summary: "UI Swagger"
+      description: "API untuk mengakses tampilan UI Swagger"
+      responses:
+        200:
+          description: "Tampilan UI Swagger"
+      tags:
+        - "Tampilan"
+swagger_ui:
+  theme: "dark"
+  layout: "Standalone"

@@ -1,0 +1,16 @@
+tags:
+  - name: Please Upload the File
+del :
+  description: File yang akan diproses
+parameters:
+  - name: upload_data
+    in: formData
+    required: required
+    type: file
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

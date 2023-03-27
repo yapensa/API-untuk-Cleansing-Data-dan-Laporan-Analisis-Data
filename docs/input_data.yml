@@ -1,0 +1,27 @@
+tags:
+  - name: Please Input the Word
+del :
+  description: Teks yang akan diproses
+parameters:
+  - name: input_data
+    in: formData
+    required: true
+    type: string
+  # form:
+  # action: /input_data
+  # method: POST
+  # enctype: multipart/form-data
+  # input:
+  #   - type: file
+  #     name: input_data
+  #   - type: submit
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
+swagger_ui:
+  theme: "dark"
+  layout: "Standalone"
